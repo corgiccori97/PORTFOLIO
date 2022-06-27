@@ -1,0 +1,18 @@
+.hidden {
+    visibility: hidden;
+}
+
+.main_nav {
+    transition: "all 1s";
+    position: fixed;
+    width: 100%;
+}
+.nav_lists {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav_list {
+    margin: 0 2em;
+}

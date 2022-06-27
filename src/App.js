@@ -1,5 +1,5 @@
 import './App.css';
-import Nav from './nav.js';
+import Nav from './components/Nav.js';
 
 function App() {
   return (
@@ -66,9 +66,6 @@ Laborum do Lorem culpa sunt occaecat culpa Lorem qui Lorem ea qui exercitation a
 
         Minim adipisicing sit est anim. Sunt dolor ut ea qui non commodo ad eu consequat culpa. Elit mollit enim amet labore duis ea minim enim. Tempor ipsum est ex laboris quis aliquip magna aliquip adipisicing.
       </section>
-      <h1>안녕하세요. 포트폴리오 소개입니다.</h1>
-      <img src="#" alt="profile" />
-      <p> 안녕하세요.. (소개) </p>
     </div>
   );
 }
