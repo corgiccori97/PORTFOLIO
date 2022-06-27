@@ -14,5 +14,6 @@
 }
 
 .nav_list {
+    text-decoration: none;
     margin: 0 2em;
 }

@@ -1,9 +1,11 @@
 import './App.css';
 import Nav from './components/Nav.js';
+import GlobalStyle from './GlobalStyles.js';
 
 function App() {
   return (
-    <div>
+    <>
+      <GlobalStyle />
       <Nav />
       <section id="about">
         ABOUT
@@ -66,7 +68,7 @@ Laborum do Lorem culpa sunt occaecat culpa Lorem qui Lorem ea qui exercitation a
 
         Minim adipisicing sit est anim. Sunt dolor ut ea qui non commodo ad eu consequat culpa. Elit mollit enim amet labore duis ea minim enim. Tempor ipsum est ex laboris quis aliquip magna aliquip adipisicing.
       </section>
-    </div>
+    </>
   );
 }
 
