@@ -1,12 +1,5 @@
 import React from 'react';
-import { Link, Element } from 'react-scroll'
-
-class ScrollTest extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {}
-    }
-}
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Nav() {
     return (
@@ -15,25 +8,30 @@ function Nav() {
             <nav>
                 <ul>
                     <li>
-                        <Link activeClass="active" smooth spy to="about">
-                            ABOUT
+                        <Link to="/#about" smooth={true}>
+                            About
                         </Link>
                     </li>
-                    <li>PROJECTS</li>
-                    <li>CONTACT</li>
-                    <li>COMMENT and LIKE</li>
+                    <li>
+                        <Link to="/#skill" smooth={true}>
+                            Skill
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/#projects" smooth={true}>
+                            Projects
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/#contact" smooth={true}>
+                            Contact 
+                        </Link>
+                    </li>
                 </ul>
             </nav>
         </header>
-
-        <Element name='about' className='element'>
-            <div className='scrollTestSector'>
-                포트폴리오 소개입니다.
-            </div>
-        </Element>
-
         </>
     );
-}
+};
 
 export default Nav;
