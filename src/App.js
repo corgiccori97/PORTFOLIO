@@ -1,5 +1,6 @@
 import './App.css';
 import Nav from './components/Nav.js';
+import About from './components/About.js'
 import GlobalStyle from './GlobalStyles.js';
 
 function App() {
@@ -7,14 +8,7 @@ function App() {
     <>
       <GlobalStyle />
       <Nav />
-      <section id="about">
-        ABOUT
-        Quis minim ex adipisicing reprehenderit ipsum excepteur occaecat voluptate anim in dolor aute in. Irure nostrud consequat irure nisi. Commodo nisi proident excepteur enim ut magna minim eiusmod magna do aliquip.
-
-        Ad veniam qui nostrud enim eu deserunt qui. Aliqua veniam ad anim excepteur magna nisi qui irure voluptate consectetur voluptate in culpa. Veniam sunt nulla non est esse ullamco. Minim reprehenderit Lorem excepteur magna aliquip non eiusmod.
-
-        Minim adipisicing sit est anim. Sunt dolor ut ea qui non commodo ad eu consequat culpa. Elit mollit enim amet labore duis ea minim enim. Tempor ipsum est ex laboris quis aliquip magna aliquip adipisicing.
-      </section>
+      <About />
       <hr /> 
       <section id="skill">
         SKILL
