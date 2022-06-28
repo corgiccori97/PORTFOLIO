@@ -16,4 +16,10 @@
 .nav_list {
     text-decoration: none;
     margin: 0 2em;
+    padding: 1rem 2rem;
+}
+
+.nav_list:hover {
+    background-color: gainsboro;
+    transition: 0.3s;
 }

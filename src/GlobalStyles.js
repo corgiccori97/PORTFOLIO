@@ -11,6 +11,20 @@ const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    a {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+        color: black;
+    }
+
+    a:hover {
+        font-weight: bold;
+        transition: 0.3s;
+    }
+
     section {
         width: 100%;
         height: 100vh;
