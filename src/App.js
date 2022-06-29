@@ -1,6 +1,8 @@
 import './App.css';
 import Nav from './components/Nav.js';
 import About from './components/About.js'
+import Skills from './components/Skills.js'
+import Contact from './components/Contact.js'
 import GlobalStyle from './GlobalStyles.js';
 
 function App() {
@@ -9,15 +11,7 @@ function App() {
       <GlobalStyle />
       <Nav />
       <About />
-      <hr /> 
-      <section id="skill">
-        SKILL
-        Quis minim ex adipisicing reprehenderit ipsum excepteur occaecat voluptate anim in dolor aute in. Irure nostrud consequat irure nisi. Commodo nisi proident excepteur enim ut magna minim eiusmod magna do aliquip.
-
-        Ad veniam qui nostrud enim eu deserunt qui. Aliqua veniam ad anim excepteur magna nisi qui irure voluptate consectetur voluptate in culpa. Veniam sunt nulla non est esse ullamco. Minim reprehenderit Lorem excepteur magna aliquip non eiusmod.
-
-        Minim adipisicing sit est anim. Sunt dolor ut ea qui non commodo ad eu consequat culpa. Elit mollit enim amet labore duis ea minim enim. Tempor ipsum est ex laboris quis aliquip magna aliquip adipisicing.
-      </section>
+      <Skills />
       <hr />
       <section id="projects">
         PROJECTS
@@ -40,28 +34,7 @@ Quis velit sit proident irure officia reprehenderit velit amet in sint labore es
 
         Minim adipisicing sit est anim. Sunt dolor ut ea qui non commodo ad eu consequat culpa. Elit mollit enim amet labore duis ea minim enim. Tempor ipsum est ex laboris quis aliquip magna aliquip adipisicing.
       </section>
-      <hr />
-      <section id="contact">
-        CONTACT
-        Id reprehenderit aliquip duis nisi reprehenderit culpa. Eiusmod occaecat deserunt dolor aute veniam aliqua. Esse nulla exercitation ad nulla aliquip deserunt eiusmod aliquip. Ullamco veniam sunt dolor in occaecat voluptate esse est. Aliquip amet do cupidatat cillum deserunt consectetur elit nostrud velit voluptate ut.
-
-Ipsum quis sint aute cupidatat sint id. Et non non aliqua nulla minim ullamco. Proident excepteur cupidatat pariatur ullamco tempor ullamco minim aute aliqua. Labore est veniam consectetur eu. Commodo aute proident fugiat commodo. Nostrud minim anim aliquip laboris id ad velit ex nisi quis ad.
-
-Ut Lorem cillum nulla ex qui occaecat do aliqua nisi officia ipsum quis. Duis nisi dolore Lorem ad nostrud elit sunt. Consectetur cupidatat consequat occaecat mollit adipisicing amet ipsum veniam.
-
-Ipsum cupidatat consectetur qui excepteur labore sint proident dolor officia magna dolore eu irure. Lorem exercitation amet labore est nisi ipsum nostrud magna esse sit cillum ea. Est sint dolore incididunt elit elit cupidatat ullamco tempor ipsum mollit laborum. Dolore labore aliqua ea veniam Lorem sit qui officia id sunt.
-
-Aliquip mollit nostrud aute reprehenderit mollit occaecat magna. Id sit aute proident pariatur nulla sunt non ipsum esse nulla occaecat officia cillum. Sunt deserunt velit proident exercitation consequat ex eiusmod velit reprehenderit mollit ad et ea. Ullamco laborum sunt mollit culpa. Commodo amet nisi mollit quis proident ut ea excepteur dolor voluptate.
-
-Officia cupidatat duis aliqua reprehenderit pariatur ipsum minim quis sit irure veniam. Dolore nisi id cillum id commodo. Magna nostrud quis fugiat ut voluptate sunt deserunt nulla deserunt consectetur dolor irure. Sint adipisicing commodo adipisicing do officia proident esse Lorem excepteur magna. Ex eu ullamco dolor voluptate aute ex ullamco culpa ut eu laborum do irure proident. Fugiat id qui amet consectetur dolor cillum ullamco exercitation aute aliqua tempor.
-
-Laborum do Lorem culpa sunt occaecat culpa Lorem qui Lorem ea qui exercitation aliquip dolore. Nostrud ipsum dolore Lorem consequat tempor. Labore excepteur veniam velit consequat cillum. Ullamco est proident laboris laboris officia consectetur magna magna id cupidatat aliquip eiusmod non. Quis aliquip occaecat do cupidatat id occaecat et do aliquip magna.
-        Quis minim ex adipisicing reprehenderit ipsum excepteur occaecat voluptate anim in dolor aute in. Irure nostrud consequat irure nisi. Commodo nisi proident excepteur enim ut magna minim eiusmod magna do aliquip.
-
-        Ad veniam qui nostrud enim eu deserunt qui. Aliqua veniam ad anim excepteur magna nisi qui irure voluptate consectetur voluptate in culpa. Veniam sunt nulla non est esse ullamco. Minim reprehenderit Lorem excepteur magna aliquip non eiusmod.
-
-        Minim adipisicing sit est anim. Sunt dolor ut ea qui non commodo ad eu consequat culpa. Elit mollit enim amet labore duis ea minim enim. Tempor ipsum est ex laboris quis aliquip magna aliquip adipisicing.
-      </section>
+      <Contact />
     </>
   );
 }

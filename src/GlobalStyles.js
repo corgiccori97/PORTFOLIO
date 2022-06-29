@@ -26,9 +26,8 @@ const GlobalStyle = createGlobalStyle`
     }
 
     section {
-        width: 100%;
+        width: 90%;
         height: 100vh;
-        padding-top: 50px;
     }
 `
 

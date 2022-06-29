@@ -34,7 +34,7 @@ function Nav() {
                         </Link>
                     </li>
                     <li className={styles.nav_list}>
-                        <Link to="/#skill" smooth={true}>
+                        <Link to="/#skills" smooth={true}>
                             Skill
                         </Link>
                     </li>
