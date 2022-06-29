@@ -7,7 +7,7 @@ function Contact() {
 
     const onSubmitForm = e => {
         e.preventDefault();
-        // Form 제출
+        // 메일 보내지고 나면 form reset 되게 하기
         emailjs.sendForm('service_l1xqgga', 'template_awvzl2s', form.current, 'IQ-MI3dj74IgsOStZ').then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -24,7 +24,7 @@ function Contact() {
                     <label htmlFor='to_email'>받는 사람: </label>
                     <input type="email" id="to_email" defaultValue='tkdgmlgg7@gmail.com' disabled/>
                     <hr />
-                    <label htmlFor='from_email'><strong> * </strong>보낸 사람: </label>
+                    <label htmlFor='from_email'><strong> * </strong>이메일: </label>
                     <input type="email" id="from_email" name="email" placeholder="이메일을 입력하세요" required />
                     <hr />
                     <label htmlFor='from_name'><strong>* </strong>이름: </label>
