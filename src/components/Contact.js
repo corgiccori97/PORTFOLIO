@@ -1,29 +1,40 @@
 import styles from './Contact.module.css';
-import { init, send } from 'emailjs-com';
-import { useEffect } from 'react';
+import emailjs from 'emailjs-com';
+import { useRef } from 'react';
 
-// 아이폰 메일 형식처럼 UI 짜기
 function Contact() {
-    useEffect(() => {
-        init('IQ-MI3dj74IgsOStZ');
-    }, [])
+    const form = useRef();
 
     const onSubmitForm = e => {
-        send('service_l1xqgga', 'service_l1xqgga')
-    }
+        e.preventDefault();
+        // Form 제출
+        emailjs.sendForm('service_l1xqgga', 'template_awvzl2s', form.current, 'IQ-MI3dj74IgsOStZ').then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
 
     return (
         <>
         <section className={styles.contact} id="contact">
-            <h1>Contact</h1>
-            <hr />
-            <form className='emailForm'>
-                <input type="email" id="to_email" value="tkdgmlgg7@gmail.com" />
-                <input type="email" id="from_email" placeholder="이메일을 입력하세요" />
-                <input type="text" id="title" placeholder="제목" />
-                <input type="textarea" id="content" placeholder="내용" />
-                <button type="submit" onClick={onSubmitForm}>Send</button>
-            </form>
+            <div className='container'>
+                <h1>Contact</h1>
+                <form ref={form} onSubmit={onSubmitForm}>
+                    <label htmlFor='to_email'>받는 사람: </label>
+                    <input type="email" id="to_email" defaultValue='tkdgmlgg7@gmail.com' disabled/>
+                    <hr />
+                    <label htmlFor='from_email'><strong> * </strong>보낸 사람: </label>
+                    <input type="email" id="from_email" name="email" placeholder="이메일을 입력하세요" required />
+                    <hr />
+                    <label htmlFor='from_name'><strong>* </strong>이름: </label>
+                    <input type="text" id="from_name" name="from_name" placeholder="이름" required />
+                    <hr />
+                    <textarea id="message" name="message" placeholder="내용"  required />
+                    <br />
+                    <button type="submit">send</button>
+                </form>
+            </div>
         </section>
 
         </>

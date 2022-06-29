@@ -29,6 +29,10 @@ const GlobalStyle = createGlobalStyle`
         width: 90%;
         height: 100vh;
     }
+
+    form input {
+        border: none;
+    }
 `
 
 export default GlobalStyle;
