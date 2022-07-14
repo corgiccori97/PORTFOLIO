@@ -27,7 +27,6 @@ const GlobalStyle = createGlobalStyle`
 
     section {
         width: 90%;
-        height: 100vh;
     }
 
     form input {

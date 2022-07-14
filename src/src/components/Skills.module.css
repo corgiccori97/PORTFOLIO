@@ -1,3 +1,33 @@
 .skills {
-    margin: 3rem;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.skills h1,
+.skills h2 {
+    text-align: center;
+}
+
+.skills li {
+    list-style: none;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.912);
+}
+
+.wrapper {
+    border: 1px solid black;
+    background-color: #0055FF;
+    margin-bottom: 0.7rem;
+}
+
+.skills section {
+    margin-top: 4rem;
+}
+
+#interests > li {
+    border: 1px solid gray;
 }
