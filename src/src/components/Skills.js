@@ -1,5 +1,4 @@
 import styles from './Skills.module.css'
-import { CircleProgress } from 'react-circular-gradient-progress';
 
 function Skills() {
     return (
