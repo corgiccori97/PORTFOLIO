@@ -14,6 +14,7 @@ function App() {
       <Skills />
       <hr />
       <section id="projects">
+        
         PROJECTS
         Pariatur labore qui cupidatat aute cupidatat exercitation nulla cupidatat velit sunt aute ut reprehenderit aliqua. Proident aliqua eiusmod do pariatur pariatur sunt ad fugiat consequat anim mollit do. Deserunt eiusmod esse ullamco duis ullamco ea. Nostrud exercitation duis velit elit.
 

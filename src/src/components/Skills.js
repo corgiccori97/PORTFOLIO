@@ -2,15 +2,15 @@ import styles from './Skills.module.css'
 import ProgressBar from "@ramonak/react-progress-bar";
 import { useEffect, useRef, useState } from 'react';
 
-function Skills() {
+function Skills(skillClick) {
     const [progress, setProgress] = useState([0, 0, 0, 0, 0]);
     const progress_Id = useRef(0);
     // skills 섹션으로 넘어올 때마다 setprogress
     useEffect(() => {
         setProgress([90, 80, 60, 40, 80]);
-    }, [])
+    }, [skillClick])
     return (
-        <>
+        <div className={styles.container} id='container'>
         <section className={styles.skills} id="skills">
             <h1 aria-label='main-skills'>Main Skills</h1>
             <ul className='skills frontend'>
@@ -35,9 +35,9 @@ function Skills() {
                     <ProgressBar completed={progress[4]} className='wrapper'/>
                 </li>
             </ul>
-            <section id="interests">
+            <section className={styles.interests} id="interest">
                 <h2>Have interests & knowledge .. </h2>
-                <ul>
+                <ul className='interests'>
                     <li>
                         Adobe XD
                     </li>
@@ -45,7 +45,7 @@ function Skills() {
                         Python
                     </li>
                     <li>
-                        Google Analytics
+                        GoogleAnalytics
                     </li>
                     <li>
                         Tensorflow
@@ -62,7 +62,7 @@ function Skills() {
                 </ul>
             </section>
         </section>
-        </>
+        </div>
     );
 }
 
