@@ -1,23 +1,28 @@
 .contact {
+    display: block;
     margin: 0 auto;
     margin: 4rem;
     font-weight: bold;
 }
 
+
 form {
-    border: 1px solid lightgray;
+    display: relative;
     border-radius: 30px;
     padding: 2rem;
-    width: 50%;
+    font-size: 1.5rem;
 }
 
 form input {
     width: 50%;
+    font-size: 1.3rem;
+    color: #0055FF;
 }
 
 form hr {
     margin-top: 1rem;
     color: gray;
+    visibility: hidden;
 }
 
 form textarea {
@@ -32,11 +37,14 @@ input:nth-child(3) {
 }
 
 button {
-    display: block;
-    margin: 0 auto;
-    width: 5rem;
+    display: absolute;
     border: none;
     background: none;
+    
+}
+
+button img {
+    width: 5rem;
     cursor: pointer;
 }
 

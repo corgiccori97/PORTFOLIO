@@ -1,0 +1,10 @@
+.barCompleted {
+    height: 20px;
+    width: 80%;
+    background: gray;
+    transition: width 1s ease-in-out 0s;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}

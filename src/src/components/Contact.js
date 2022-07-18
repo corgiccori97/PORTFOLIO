@@ -1,6 +1,7 @@
 import styles from './Contact.module.css';
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
+import sendimg from'../images/send.png';
 
 function Contact() {
     const form = useRef();
@@ -24,15 +25,17 @@ function Contact() {
                     <label htmlFor='to_email'>받는 사람: </label>
                     <input type="email" id="to_email" defaultValue='tkdgmlgg7@gmail.com' disabled/>
                     <hr />
-                    <label htmlFor='from_email'><strong> * </strong>이메일: </label>
+                    <label htmlFor='from_email'><strong> * </strong>보내는 분 이메일: </label>
                     <input type="email" id="from_email" name="email" placeholder="이메일을 입력하세요" required />
                     <hr />
-                    <label htmlFor='from_name'><strong>* </strong>이름: </label>
+                    <label htmlFor='from_name'><strong>* </strong>보내는 분 이름: </label>
                     <input type="text" id="from_name" name="from_name" placeholder="이름" required />
                     <hr />
-                    <textarea id="message" name="message" placeholder="내용"  required />
+                    <textarea id="message" name="message" placeholder="내용을 적어주세요(필수기재)"  required />
                     <br />
-                    <button type="submit">send</button>
+                    <button type="submit">
+                        <img src={sendimg} alt="send" />
+                    </button>
                 </form>
             </div>
         </section>
