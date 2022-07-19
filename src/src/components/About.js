@@ -1,5 +1,5 @@
 import styles from "./About.module.css"
-
+// import profileimg from '../images/profile.jpg'
 function About () {
     return (
         <>
@@ -8,6 +8,7 @@ function About () {
             <p>
                 어떠어떠한 뭔가를 믿습니다. 어쩌구저쩌구..
             </p>
+            {/* <img src={profileimg} /> */}
         </section>
         </>
     );

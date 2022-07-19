@@ -7,7 +7,7 @@
 
 
 form {
-    display: relative;
+    position: relative;
     border-radius: 30px;
     padding: 2rem;
     font-size: 1.5rem;
@@ -37,10 +37,10 @@ input:nth-child(3) {
 }
 
 button {
-    display: absolute;
+    position: absolute;
     border: none;
     background: none;
-    
+    right:0;
 }
 
 button img {
